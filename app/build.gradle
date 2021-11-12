@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.contact.unmatch"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+//    implementation 'androidx.core:core-ktx:0.3'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.hbb20:ccp:1.7.1'
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+//    compile 'com.googlecode.libphonenumber:libphonenumber:8.4.2'
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.13'
+
+    implementation project(path: ':MobileContactsLib')
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
+}

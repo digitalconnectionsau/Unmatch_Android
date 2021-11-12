@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/register_button"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.contact.unmatch.ResizableImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/your_account"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/firstname_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/last_name"-->
+            <!--                    android:textSize="14dp"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    >-->
+            <!--                </TextView>-->
+            <!--                <EditText-->
+            <!--                    android:id="@+id/lastname_edit"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:inputType="textEmailAddress"-->
+            <!--                    android:background="@drawable/rounded_edittext"-->
+            <!--                    >-->
+
+            <!--                </EditText>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/birthday"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <DatePicker
+                android:id="@+id/birthday_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="@string/phone_number"-->
+            <!--                    android:textSize="14dp"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    >-->
+            <!--                </TextView>-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="horizontal"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    >-->
+            <!--                    <com.hbb20.CountryCodePicker-->
+            <!--                        android:id="@+id/ccp"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        app:defaultNameCode="US"-->
+            <!--                        >-->
+
+            <!--                    </com.hbb20.CountryCodePicker>-->
+            <!--                    <EditText-->
+            <!--                        android:id="@+id/editAccountNumber"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:ems="10"-->
+            <!--                        android:hint="phone number"-->
+            <!--                        android:inputType="phone"-->
+            <!--                        android:layout_weight="0.5"-->
+            <!--                        />-->
+            <!--                </LinearLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/register_email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!--<EditText
+                android:id="@+id/password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/confirm_password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="10dp"/>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black">
+
+                <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_edittext"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black">
+
+                <EditText
+                    android:id="@+id/confirm_password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/create_button_background"
+        android:text="@string/submit"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
